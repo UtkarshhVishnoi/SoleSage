@@ -1,0 +1,78 @@
+/* Main website background */
+body {
+    background-color: #f7f3e7;
+}
+
+.icon {
+    background-image: url(./logo_withoutbg.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.banner {
+    background-image: url(./removefrontbg.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.pcard {
+    width: 300px;
+    overflow: hidden;
+}
+
+.pcard img {
+    height: 300px;
+    width: 100%;
+}
+
+.cart-icn {
+    position: relative;
+    cursor: pointer;
+}
+
+#cart-num {
+    position: absolute;
+    top: 1%;
+    right: 1.5%;
+}
+
+#cart-num-sm {
+    position: absolute;
+    left: 14%;
+    top: 5.2%;
+}
+
+#crt {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #f7f3e7;
+}
+
+#crt-btn {
+    cursor: pointer;
+}
+
+#crt {
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.add-t-cart {
+    cursor: pointer;
+}
+
+.add-t-cart:active {
+    background-color: azure;
+    color: black;
+}
+
+/* Lower section / footer styling */
+footer, .footer, #footer, .bottom-section {
+    background-color: #8e7e6d;
+    color: #000000;  /* Black text color */
+    padding: 20px;
+    text-align: center;
+}

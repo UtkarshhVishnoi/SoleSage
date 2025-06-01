@@ -1,2 +1,1 @@
-# SoleSage
-SoleSage - Retail Website
+# WalkofFame

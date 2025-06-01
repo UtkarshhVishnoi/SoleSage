@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="w-full">
+        <nav class="flex justify-between w-full px-4 md:px-8 py-2 items-center">
+            <div class="flex items-center gap-2">
+                <a href="index.html"><div class="icon h-16 w-16 rounded-md"></div></a>
+                <div class="font-semibold">SoleSage</div>
+            </div>
+            <div class="hidden gap-6 md:flex items-center">
+                <a href="index.html">Home</a>
+                <a href="#">Shop</a>
+                <a href="#">Blog</a>
+                <a href="#">About</a>
+                <div>
+                     <img src="./icons8-cart-50.png" class="h-[25px] w-[25px]" id="cart-icn"/>
+                     <span class="bg-red-600 text-white px-1 rounded-full" id="cart-num">0</span>
+                </div>
+                
+            </div>
+            <div class="md:hidden" id="menu-btn">
+                <img src="./icons8-menu.gif"/>
+            </div>
+        </nav>
+        <div class=" hidden flex flex-col px-6 py-4 gap-6 md:hidden border-t-2 border-b-2 border-indigo-400" id="drop_nav">
+                <a href="index.html">Home</a>
+                <a href="#">Shop</a>
+                <a href="#">Blog</a>
+                <a href="#">About</a>
+            </div>
+    </header>
+    <div>
+        <h1 class="text-3xl font-semibold text-center">Cart</h1>
+    </div>
+</body>
+</html>
