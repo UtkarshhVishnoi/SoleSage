@@ -28,13 +28,13 @@ productsContainer.addEventListener("click", function (event) {
       targetElement = document.getElementById("crt");
       document.getElementById("cartp").innerText = cartprice;
       const newHtmlContent = `
-                       <div class='flex items-center gap-2 rounded-md p-2'>
-                            <img src=${image} class='h-28 w-28'/>
-                            <div class='flex gap-3 items-center'>
-                               <h1 class='text-md font-semibold'>${productName}</h1>
-                               <p>${"₹" + productPrice}</p>
-                            </div>
-                        </div>`;
+        <div class='flex items-center gap-2 rounded-md p-2'>
+            <img src=${image} class='h-28 w-28'/>
+            <div class='flex gap-3 items-center'>
+               <h1 class='text-md font-semibold'>${productName}</h1>
+               <p>${"₹" + productPrice}</p>
+            </div>
+        </div>`;
 
       targetElement.innerHTML += newHtmlContent;
 
@@ -43,23 +43,27 @@ productsContainer.addEventListener("click", function (event) {
       );
 
       document.getElementById("cart-num").innerText = cartnum;
+
+      // --- PLACE TOASTIFY CODE HERE ---
+      Toastify({
+        text: "Item added to cart",
+        duration: 3000,
+        newWindow: true,
+        close: true,
+        gravity: "bottom", // `top` or `bottom`
+        position: "right", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+          background: "#603F26",
+          borderRadius: "20px",
+          color: "#f7f3e7",
+        },
+        onClick: function () {}, // Callback after click
+      }).showToast();
+      // --- END TOASTIFY CODE ---
     }
   }
-  Toastify({
-    text: "Item added to cart",
-    duration: 3000,
-    newWindow: true,
-    close: true,
-    gravity: "bottom", // `top` or `bottom`
-    position: "right", // `left`, `center` or `right`
-    stopOnFocus: true, // Prevents dismissing of toast on hover
-    style: {
-      background: "#603F26",
-      borderRadius: "20px",
-      color: "#f7f3e7",
-    },
-    onClick: function () {}, // Callback after click
-  }).showToast();
+  // The Toastify code was originally here, but it needs to be inside the 'if' block.
 });
 
 const cartContainer = document.getElementById("crt");
