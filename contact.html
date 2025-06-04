@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoleSage - Contact Us</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V3Z0GQQGD4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-V3Z0GQQGD4');
+</script>
+<body style="overflow-x: hidden; position: relative;">
+    <header class="w-full">
+        <nav class="flex justify-between w-full px-4 md:px-8 py-2 items-center">
+            <div class="flex items-center gap-2">
+                <a href="index.html"><div class="icon h-16 w-16 rounded-md"></div></a>
+                <div class="font-semibold" style="color: #231709;">SoleSage</div>
+            </div>
+            <div class="hidden gap-6 md:flex items-center">
+                <a href="index.html" class="text-[#231709]">Home</a>
+                <a href="#" class="text-[#231709]">Shop</a>
+                <a href="#" class="text-[#231709]">Blog</a>
+                <a href="#" class="text-[#231709]">About</a>
+                <img src="./icons8-cart-50.png" class="h-[25px] w-[25px] cart-icn" id="cart_icon_desktop"/>
+                <span class="bg-[#603F26] text-white px-1 rounded-full" id="cart-num">0</span>
+            </div>
+            <div class="md:hidden" id="menu-btn">
+                <img src="./icons8-menu.gif"/>
+            </div>
+        </nav>
+        <div class=" hidden flex flex-col px-6 py-4 gap-6 md:hidden border-t-2 border-b-2 border-indigo-400" id="drop_nav">
+                <a href="index.html">Home</a>
+                <a href="#">Shop</a>
+                <a href="#">Blog</a>
+                <a href="#">About</a>
+                <img src="./icons8-cart-50.png" class="h-[25px] w-[25px] cart-icn" id="cart_icon_sm"/>
+                <span class="bg-red-600 text-white px-1 rounded-full" id="cart-num-sm">0</span>
+            </div>
+    </header>
+
+    <main class="px-4 md:px-8 py-8 flex flex-col items-center justify-center min-h-[calc(100vh-200px)]">
+        <h1 class="text-4xl font-bold mb-8" style="color: #231709;">Contact Us</h1>
+        <p class="text-lg text-center mb-10 max-w-2xl" style="color: #231709;">We'd love to hear from you! Please fill out the form below and we'll get back to you as soon as possible.</p>
+
+        <form class="w-full max-w-lg bg-white p-8 rounded-lg shadow-lg" style="box-shadow: 0 4px 6px -1px rgba(142, 126, 109, 0.5), 0 2px 4px -1px rgba(142, 126, 109, 0.3);">
+            <div class="mb-5">
+                <label for="name" class="block text-sm font-medium text-gray-700" style="color: #231709;">Your Name</label>
+                <input type="text" id="name" name="name" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#603F26] focus:border-[#603F26] sm:text-sm" required>
+            </div>
+            <div class="mb-5">
+                <label for="email" class="block text-sm font-medium text-gray-700" style="color: #231709;">Your Email</label>
+                <input type="email" id="email" name="email" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#603F26] focus:border-[#603F26] sm:text-sm" required>
+            </div>
+            <div class="mb-5">
+                <label for="reason" class="block text-sm font-medium text-gray-700" style="color: #231709;">Reason for Contact</label>
+                <select id="reason" name="reason" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#603F26] focus:border-[#603F26] sm:text-sm">
+                    <option value="general_inquiry">General Inquiry</option>
+                    <option value="order_support">Order Support</option>
+                    <option value="product_feedback">Product Feedback</option>
+                    <option value="partnership">Partnership Opportunities</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="mb-6">
+                <label for="description" class="block text-sm font-medium text-gray-700" style="color: #231709;">Description</label>
+                <textarea id="description" name="description" rows="5" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#603F26] focus:border-[#603F26] sm:text-sm" required></textarea>
+            </div>
+            <div class="mb-6">
+                <label for="attachment" class="block text-sm font-medium text-gray-700" style="color: #231709;">Attach File (Optional)</label>
+                <input type="file" id="attachment" name="attachment" class="mt-1 block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-[#EDE5DD] file:text-[#603F26] hover:file:bg-[#E0D5C9]">
+            </div>
+            <div class="flex justify-center">
+                <button type="submit" style="background-color: #603F26; color: #f7f3e7;" class="p-3 md:p-4 rounded-full text-lg w-full transition-colors duration-200 hover:bg-opacity-90">Send Message</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <div class="bg-squirrel text-bison p-4 flex flex-col gap-6">
+            <div class="flex flex-col md:flex-row gap-2 justify-around">
+                <div>
+                <h4 style="margin-top:0; color: #231709;">Connect With Us</h4>
+                <div class="flex gap-2">
+                    <a href="https://www.facebook.com/" class="text-blue-300" target="_blank">
+                        <img src="./logos/facebook_logo.png" alt="Facebook" style="width:30px;height:30px;">
+                    </a>
+                    <a href="https://x.com/" class="text-blue-300" target="_blank">
+                        <img src="./logos/x_logo.png" alt="Twitter" style="width:30px;height:30px;">
+                    </a>
+                    <a href="https://www.instagram.com" class="text-pink-300" target="_blank">
+                        <img src="./logos/instagram_logo.png" alt="Instagram" style="width:30px;height:30px;">
+                    </a>
+                    <a href="https://www.pinterest.com" class="text-red-400" target="_blank">
+                        <img src="./logos/pinterest_logo.png" alt="Pinterest" style="width:30px;height:30px;">
+                    </a>
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-2">
+                <h4 style="color: #231709;">Sign Up For Our Newsletter</h4>
+                <p class="text-slate-200 text-sm" style="color: #f7f3e7;">Get exclusive deals and the latest shoe trends!</p>
+                <form>
+                    <input type="email" placeholder="Your Email Address" style="padding:10px; border:1px solid #f7f3e7; border-radius:5px 0 0 5px; flex-grow:1;">
+                    <button type="submit" style="background-color:#007bff; color:#f7f3e7; border:none; padding:10px 15px; border-radius:0 5px 5px 0; cursor:pointer;">Subscribe</button>
+                </form>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row gap-2 justify-around">
+
+                <div>
+                <u><h4 style="color: #231709;">Shop</h4></u>
+                <ul>
+                    <li><a href="/new-arrivals" class="text-slate-200 text-sm" style="color: #f7f3e7;">New Arrivals</a></li>
+                    <li><a href="/mens-shoes" class="text-slate-200 text-sm" style="color: #f7f3e7;">Men's Shoes</a></li>
+                    <li><a href="/womens-shoes" class="text-slate-200 text-sm" style="color: #f7f3e7;">Women's Shoes</a></li>
+                    <li><a href="/sale" class="text-slate-200 text-sm" style="color: #f7f3e7;">Sale</a></li>
+                </ul>
+                </div>
+
+                <div>
+                <u><h4 style="color: #231709;">Customer Service</h4></u>
+                <ul>
+                    <li><a href="contact.html" class="text-slate-200 text-sm" style="color: #f7f3e7;">Contact Us</a></li>
+                    <li><a href="/shipping-policy" class="text-slate-200 text-sm" style="color: #f7f3e7;">Shipping Policy</a></li>
+                    <li><a href="/return-policy" class="text-slate-200 text-sm" style="color: #f7f3e7;">Return Policy</a></li>
+                    <li><a href="/faq" class="text-slate-200 text-sm" style="color: #f7f3e7;">FAQ</a></li>
+                </ul>
+                </div>
+
+                <div>
+                <u><h4 style="color: #231709;">About Us</h4></u>
+                <ul>
+                    <li><a href="/our-story" class="text-slate-200 text-sm" style="color: #f7f3e7;">Our Story</a></li>
+                    <li><a href="/careers" class="text-slate-200 text-sm" style="color: #f7f3e7;">Careers</a></li>
+                    <li><a href="/blog" class="text-slate-200 text-sm" style="color: #f7f3e7;">Blog</a></li>
+                </ul>
+                </div>
+            </div>
+            <div style="text-align:center;">
+                <p class="text-slate-200 text-sm" style="color: #f7f3e7;">&copy; 2025 SoleSage. All Rights Reserved.</p>
+                <p><a href="/privacy-policy" style="color:#555; text-decoration:none; margin:0 10px;">Privacy Policy</a> | <a href="/terms-of-service" style="color:#555; text-decoration:none; margin:0 10px;">Terms of Service</a></p>
+            </div>
+            </div>
+    </footer>
+    <div id="crt" class=" w-full md:w-[35%] h-screen hidden" >
+        <div class="flex justify-between p-3 items-center">
+           <h1 class="text-center font-semibold">Cart</h1>
+           <p class="text-xl" id="crt-btn">x</p>
+       </div>
+       <div class="flex justify-between p-3 items-center">
+           <h1 class="text-center font-semibold">Total Amount :</h1>
+           <div>
+           <span>₹</span>
+           <span class="text-xl" id="cartp">0</span>
+           </div>
+       </div>
+    </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
