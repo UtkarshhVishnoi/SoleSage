@@ -2,7 +2,9 @@
 body {
     background-color: #f7f3e7;
 }
-
+.inr{
+    color: #000000;
+}
 .icon {
     background-image: url(./logo_withoutbg.png);
     background-size: cover;
@@ -60,8 +62,12 @@ body {
     right: 0;
 }
 
+
+
 .add-t-cart {
     cursor: pointer;
+    background-color: #603F26; 
+    color: #f7f3e7;
 }
 
 .add-t-cart:active {
