@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoleSage - Shipping Policy</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V3Z0GQQGD4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-V3Z0GQQGD4');
+</script>
+<body style="overflow-x: hidden; position: relative;">
+    <header class="w-full">
+        <nav class="flex justify-between w-full px-4 md:px-8 py-2 items-center">
+            <div class="flex items-center gap-2">
+                <a href="index.html"><div class="icon h-16 w-16 rounded-md"></div></a>
+                <div class="font-semibold" style="color: #231709;">SoleSage</div>
+            </div>
+            <div class="hidden gap-6 md:flex items-center">
+                <a href="index.html" class="text-[#231709]">Home</a>
+                <a href="#" class="text-[#231709]">Shop</a>
+                <a href="#" class="text-[#231709]">Blog</a>
+                <a href="#" class="text-[#231709]">About</a>
+                <img src="./icons8-cart-50.png" class="h-[25px] w-[25px] cart-icn" id="cart_icon_desktop"/>
+                <span class="bg-[#603F26] text-white px-1 rounded-full" id="cart-num">0</span>
+            </div>
+            <div class="md:hidden" id="menu-btn">
+                <img src="./icons8-menu.gif"/>
+            </div>
+        </nav>
+        <div class=" hidden flex flex-col px-6 py-4 gap-6 md:hidden border-t-2 border-b-2 border-indigo-400" id="drop_nav">
+                <a href="index.html">Home</a>
+                <a href="#">Shop</a>
+                <a href="#">Blog</a>
+                <a href="#">About</a>
+                <img src="./icons8-cart-50.png" class="h-[25px] w-[25px] cart-icn" id="cart_icon_sm"/>
+                <span class="bg-red-600 text-white px-1 rounded-full" id="cart-num-sm">0</span>
+            </div>
+    </header>
+
+    <main class="px-4 md:px-8 py-8 flex flex-col items-center min-h-[calc(100vh-200px)] bg-[#8e7e6d]">
+        <h1 class="text-4xl font-bold mb-8 text-center" style="color: #231709;">Shipping Policy</h1>
+        <div class="w-full max-w-4xl bg-white p-8 rounded-lg shadow-lg" style="box-shadow: 0 4px 6px -1px rgba(142, 126, 109, 0.5), 0 2px 4px -1px rgba(142, 126, 109, 0.3);">
+            <p class="mb-4" style="color: #231709;">At SoleSage, we are committed to providing you with the best possible shopping experience, including reliable and efficient shipping. Please read our shipping policy carefully to understand how your orders are processed and delivered.</p>
+
+            <h2 class="text-2xl font-semibold mb-3 mt-6" style="color: #231709;">1. Shipping Locations</h2>
+            <p class="mb-4" style="color: #231709;">We currently ship to all locations within India. For international shipping inquiries, please contact our customer service.</p>
+
+            <h2 class="text-2xl font-semibold mb-3 mt-6" style="color: #231709;">2. Processing Time</h2>
+            <ul class="list-disc list-inside mb-4 pl-4" style="color: #231709;">
+                <li>Orders are typically processed and dispatched within <strong>1-2 business days</strong> (Monday-Friday, excluding public holidays) after payment verification.</li>
+                <li>Orders placed on weekends or holidays will be processed on the next business day.</li>
+            </ul>
+
+            <h2 class="text-2xl font-semibold mb-3 mt-6" style="color: #231709;">3. Shipping Methods and Delivery Times</h2>
+            <p class="mb-2" style="color: #231709;">We offer the following shipping methods:</p>
+            <ul class="list-disc list-inside mb-4 pl-4" style="color: #231709;">
+                <li><strong>Standard Shipping:</strong>
+                    <ul class="list-circle list-inside ml-4">
+                        <li>Estimated Delivery: <strong>5-7 business days</strong> from dispatch.</li>
+                        <li>Cost: ₹150 for orders below ₹2000.</li>
+                        <li>Free for orders above ₹2000.</li>
+                    </ul>
+                </li>
+                <li><strong>Express Shipping:</strong> (Currently Unavailable, coming soon!)
+                    <ul class="list-circle list-inside ml-4">
+                        <li>Estimated Delivery: 2-3 business days from dispatch.</li>
+                        <li>Cost: ₹300 per order.</li>
+                    </ul>
+                </li>
+            </ul>
+            <p class="mb-4 text-sm italic" style="color: #231709;">Please note that delivery times are estimates and may vary due to unforeseen circumstances, location, or courier delays.</p>
+
+            <h2 class="text-2xl font-semibold mb-3 mt-6" style="color: #231709;">4. Shipping Costs</h2>
+            <ul class="list-disc list-inside mb-4 pl-4" style="color: #231709;">
+                <li>Shipping costs are calculated at checkout based on your order total and chosen shipping method.</li>
+                <li>Enjoy **FREE Standard Shipping** on all orders exceeding ₹2000.</li>
+            </ul>
+
+            <h2 class="text-2xl font-semibold mb-3 mt-6" style="color: #231709;">5. Order Tracking</h2>
+            <p class="mb-4" style="color: #231709;">Once your order has been dispatched, you will receive a shipping confirmation email containing your tracking number and a link to track your package's journey. Please allow up to 24 hours for the tracking information to become active.</p>
+
+            <h2 class="text-2xl font-semibold mb-3 mt-6" style="color: #231709;">6. Delivery Issues</h2>
+            <ul class="list-disc list-inside mb-4 pl-4" style="color: #231709;">
+                <li><strong>Incorrect Address:</strong> Please ensure your shipping address is correct before completing your purchase. SoleSage is not responsible for orders shipped to incorrectly provided addresses. If an order is returned due to an incorrect address, you may be responsible for re-shipping costs.</li>
+                <li><strong>Lost or Damaged Packages:</strong> If your package is lost in transit or arrives damaged, please contact our customer service immediately at [Your Customer Service Email] or [Your Phone Number]. We will work with the shipping carrier to resolve the issue as quickly as possible. Please retain all packaging materials and damaged goods as they may be required for a claim.</li>
+                <li><strong>Undeliverable Packages:</strong> If a package is deemed undeliverable by the courier and returned to us, we will contact you to arrange re-delivery. Additional shipping charges may apply.</li>
+            </ul>
+
+            <h2 class="text-2xl font-semibold mb-3 mt-6" style="color: #231709;">7. Changes to Orders</h2>
+            <p class="mb-4" style="color: #231709;">We aim to process orders quickly. Therefore, once an order is placed, we may not be able to make changes to the shipping address or order details. Please contact us as soon as possible if you need to request a change, and we will do our best to accommodate.</p>
+
+            <h2 class="text-2xl font-semibold mb-3 mt-6" style="color: #231709;">8. Contact Us</h2>
+            <p class="mb-4" style="color: #231709;">If you have any questions or concerns regarding your order's shipping, please do not hesitate to contact our customer service team through our <a href="contact.html" class="underline" style="color: #603F26;">Contact Us page</a>.</p>
+
+            <p class="text-sm italic mt-8" style="color: #231709;">Last updated: June 4, 2025</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="bg-squirrel text-bison p-4 flex flex-col gap-6">
+            <div class="flex flex-col md:flex-row gap-2 justify-around">
+                <div>
+                <h4 style="margin-top:0; color: #231709;">Connect With Us</h4>
+                <div class="flex gap-2">
+                    <a href="https://www.facebook.com/" class="text-blue-300" target="_blank">
+                        <img src="./logos/facebook_logo.png" alt="Facebook" style="width:30px;height:30px;">
+                    </a>
+                    <a href="https://x.com/" class="text-blue-300" target="_blank">
+                        <img src="./logos/x_logo.png" alt="Twitter" style="width:30px;height:30px;">
+                    </a>
+                    <a href="https://www.instagram.com" class="text-pink-300" target="_blank">
+                        <img src="./logos/instagram_logo.png" alt="Instagram" style="width:30px;height:30px;">
+                    </a>
+                    <a href="https://www.pinterest.com" class="text-red-400" target="_blank">
+                        <img src="./logos/pinterest_logo.png" alt="Pinterest" style="width:30px;height:30px;">
+                    </a>
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-2">
+                <h4 style="color: #231709;">Sign Up For Our Newsletter</h4>
+                <p class="text-slate-200 text-sm" style="color: #f7f3e7;">Get exclusive deals and the latest shoe trends!</p>
+                <form>
+                    <input type="email" placeholder="Your Email Address" style="padding:10px; border:1px solid #f7f3e7; border-radius:5px 0 0 5px; flex-grow:1;">
+                    <button type="submit" style="background-color:#007bff; color:#f7f3e7; border:none; padding:10px 15px; border-radius:0 5px 5px 0; cursor:pointer;">Subscribe</button>
+                </form>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row gap-2 justify-around">
+
+                <div>
+                <u><h4 style="color: #231709;">Shop</h4></u>
+                <ul>
+                    <li><a href="/new-arrivals" class="text-slate-200 text-sm" style="color: #f7f3e7;">New Arrivals</a></li>
+                    <li><a href="/mens-shoes" class="text-slate-200 text-sm" style="color: #f7f3e7;">Men's Shoes</a></li>
+                    <li><a href="/womens-shoes" class="text-slate-200 text-sm" style="color: #f7f3e7;">Women's Shoes</a></li>
+                    <li><a href="/sale" class="text-slate-200 text-sm" style="color: #f7f3e7;">Sale</a></li>
+                </ul>
+                </div>
+
+                <div>
+                <u><h4 style="color: #231709;">Customer Service</h4></u>
+                <ul>
+                    <li><a href="contact.html" class="text-slate-200 text-sm" style="color: #f7f3e7;">Contact Us</a></li>
+                    <li><a href="shipping-policy.html" class="text-slate-200 text-sm" style="color: #f7f3e7;">Shipping Policy</a></li>
+                    <li><a href="/return-policy" class="text-slate-200 text-sm" style="color: #f7f3e7;">Return Policy</a></li>
+                    <li><a href="/faq" class="text-slate-200 text-sm" style="color: #f7f3e7;">FAQ</a></li>
+                </ul>
+                </div>
+
+                <div>
+                <u><h4 style="color: #231709;">About Us</h4></u>
+                <ul>
+                    <li><a href="/our-story" class="text-slate-200 text-sm" style="color: #f7f3e7;">Our Story</a></li>
+                    <li><a href="/careers" class="text-slate-200 text-sm" style="color: #f7f3e7;">Careers</a></li>
+                    <li><a href="/blog" class="text-slate-200 text-sm" style="color: #f7f3e7;">Blog</a></li>
+                </ul>
+                </div>
+            </div>
+            <div style="text-align:center;">
+                <p class="text-slate-200 text-sm" style="color: #f7f3e7;">&copy; 2025 SoleSage. All Rights Reserved.</p>
+                <p><a href="/privacy-policy" style="color:#555; text-decoration:none; margin:0 10px;">Privacy Policy</a> | <a href="/terms-of-service" style="color:#555; text-decoration:none; margin:0 10px;">Terms of Service</a></p>
+            </div>
+            </div>
+    </footer>
+    <div id="crt" class=" w-full md:w-[35%] h-screen hidden" >
+        <div class="flex justify-between p-3 items-center">
+           <h1 class="text-center font-semibold">Cart</h1>
+           <p class="text-xl" id="crt-btn">x</p>
+       </div>
+       <div class="flex justify-between p-3 items-center">
+           <h1 class="text-center font-semibold">Total Amount :</h1>
+           <div>
+           <span>₹</span>
+           <span class="text-xl" id="cartp">0</span>
+           </div>
+       </div>
+    </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
