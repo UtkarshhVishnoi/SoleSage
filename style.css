@@ -10,7 +10,24 @@ body {
     background-size: cover;
     background-position: center;
 }
+.carousel-container {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
+.carousel-item {
+    height: 400px; /* Adjust height as needed */
+}
+
+.carousel-button {
+    cursor: pointer;
+    font-size: 24px;
+    outline: none;
+    border: none;
+}
+
+.carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
 .banner {
     background-image: url(./removefrontbg.png);
     background-size: cover;
