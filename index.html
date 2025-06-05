@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 </head>
-<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-V3Z0GQQGD4"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -44,9 +43,9 @@
                 <img src="./icons8-cart-50.png" class="h-[25px] w-[25px] cart-icn" id="cart_icon_sm"/>
                 <span class="bg-red-600 text-white px-1 rounded-full" id="cart-num-sm">0</span>
             </div>
-     </header>
+    </header>
 
-      <main class=" px-2 md:px-6 flex flex-col py-4 gap-4 md:gap-0 md:py-0 md:flex-row items-center bg-[#8e7e6d]">
+    <main class=" px-2 md:px-6 flex flex-col py-4 gap-4 md:gap-0 md:py-0 md:flex-row items-center bg-[#8e7e6d]">
         <div class="banner md:h-[415px] md:w-[580px]"></div>
         <div class="desc flex flex-col gap-8 justify-start">
             <p style="color: #231709;">Our Exclusive Online Shopping Website</p>
@@ -56,6 +55,34 @@
         </div>
         
     </main>
+
+    <div class="carousel-container overflow-hidden relative w-full" style="height: 100px; margin-bottom: 20px;">
+    <div class="carousel-track flex transition-transform duration-700 ease-in-out" style="width: 600%;">
+        <div class="carousel-item w-1/6 flex-shrink-0" style="background-image: url('./shoes/noah-smith-LkuH3Txi_gs-unsplash.jpg'); background-size: cover; background-position: center; height: 100px;">
+            <div class="flex items-center justify-center h-full bg-[#231709] bg-opacity-50 text-white text-md font-bold p-2">Barker Brown Leather Loafers - Step in Style</div>
+        </div>
+        <div class="carousel-item w-1/6 flex-shrink-0" style="background-image: url('./shoes/ayrus-hill-RpXjt8vkmoE-unsplash.jpg'); background-size: cover; background-position: center; height: 100px;">
+            <div class="flex items-center justify-center h-full bg-[#603F26] bg-opacity-50 text-white text-md font-bold p-2">Alberto Torresi Brown Shoes - Classic Comfort</div>
+        </div>
+        <div class="carousel-item w-1/6 flex-shrink-0" style="background-image: url('./shoes/collab-media-dYgEvR2gdgk-unsplash.jpg'); background-size: cover; background-position: center; height: 100px;">
+            <div class="flex items-center justify-center h-full bg-[#603F26] bg-opacity-50 text-white text-md font-bold p-2">Neemans WingTip Brogues - Timeless Elegance</div>
+        </div>
+        <div class="carousel-item w-1/6 flex-shrink-0" style="background-image: url('./shoes/davinder-singh-2nST4hbvTkc-unsplash.jpg'); background-size: cover; background-position: center; height: 100px;">
+            <div class="flex items-center justify-center h-full bg-[#231709] bg-opacity-50 text-white text-md font-bold p-2">Mochi Black Lace Up Shoes - Modern Sophistication</div>
+        </div>
+        <div class="carousel-item w-1/6 flex-shrink-0" style="background-image: url('./shoes/guy-basabose-LPok0JM-S8M-unsplash.jpg'); background-size: cover; background-position: center; height: 100px;">
+            <div class="flex items-center justify-center h-full bg-[#603F26] bg-opacity-50 text-white text-md font-bold p-2">Minelli Heels - Elevate Your Look</div>
+        </div>
+        <div class="carousel-item w-1/6 flex-shrink-0" style="background-image: url('./shoes/jia-ye-erHlzWCN6zQ-unsplash.jpg'); background-size: cover; background-position: center; height: 100px;">
+            <div class="flex items-center justify-center h-full bg-[#231709] bg-opacity-50 text-white text-md font-bold p-2">Monk Strap Brown Shoes - Refined Style</div>
+        </div>
+    </div>
+    <button class="carousel-button prev absolute top-1/2 left-4 -translate-y-1/2 bg-[#231709] text-white p-2 rounded-full z-10 opacity-75 hover:opacity-100">‹</button>
+    <button class="carousel-button next absolute top-1/2 right-4 -translate-y-1/2 bg-[#231709] text-white p-2 rounded-full z-10 opacity-75 hover:opacity-100">›</button>
+    </div>
+        <button class="carousel-button prev absolute top-1/2 left-4 -translate-y-1/2 bg-[#231709] text-white p-2 rounded-full z-10 opacity-75 hover:opacity-100">‹</button>
+        <button class="carousel-button next absolute top-1/2 right-4 -translate-y-1/2 bg-[#231709] text-white p-2 rounded-full z-10 opacity-75 hover:opacity-100">›</button>
+    </div>
     <div class="products flex gap-2 flex-wrap justify-center p-4" id="product-container">
         <div class="pcard rounded-md shadow-lg shadow-[#8e7e6d]" >
             <img src="./shoes/noah-smith-LkuH3Txi_gs-unsplash.jpg" class="product-image"/>
@@ -261,16 +288,16 @@
     </footer>
     <div id="crt" class=" w-full md:w-[35%] h-screen hidden" >
         <div class="flex justify-between p-3 items-center">
-         <h1 class="text-center font-semibold">Cart</h1>
-         <p class="text-xl" id="crt-btn">x</p>
-     </div>
-     <div class="flex justify-between p-3 items-center">
-         <h1 class="text-center font-semibold">Total Amount :</h1>
-         <div>
-          <span>₹</span>
-         <span class="text-xl" id="cartp">0</span>
-         </div>
-     </div>
+           <h1 class="text-center font-semibold">Cart</h1>
+           <p class="text-xl" id="crt-btn">x</p>
+       </div>
+       <div class="flex justify-between p-3 items-center">
+           <h1 class="text-center font-semibold">Total Amount :</h1>
+           <div>
+            <span>₹</span>
+           <span class="text-xl" id="cartp">0</span>
+           </div>
+       </div>
     </div>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="./script.js"></script>
