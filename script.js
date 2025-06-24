@@ -63,28 +63,33 @@ productsContainer.addEventListener("click", function (event) {
             );
 
             document.getElementById("cart-num").innerText = cartnum;
-            // Assuming you have a separate #cart-num-sm for small screens as per index.html
             document.getElementById("cart-num-sm").innerText = cartnum;
 
-
-            // --- Google Analytics Event Tracking ---
-            // Send the custom 'add_to_cart' event with item_id, actual and discounted prices.
-            // You will need to create custom metrics in Google Analytics for 'actual_price' and 'discounted_price'.
-            // Also, ensure you have custom dimensions for 'item_id' and 'brand' if you want to report on them directly.
-            if (typeof gtag === 'function') {
-                gtag('event', 'add_to_cart', {
-                    item_name: productName,
-                    item_id: productId,
-                    brand: brandName, // Added brand name here
-                    price: productPrice,     // This is the discounted price
-                    actual_price: actualPrice, // This is the original price
-                    quantity: 1
-                });
-                console.log(`GA Event Sent: add_to_cart - Product: ${productName}, ID: ${productId}, Brand: ${brandName}, Discounted Price: ${productPrice}, Actual Price: ${actualPrice}`);
-            } else {
-                console.warn('Google Analytics gtag function not found. Event not sent.');
-            }
-            // --- END Google Analytics Event Tracking ---
+            // --- Google Analytics Event Tracking using dataLayer.push ---
+            // This is the correct way to send events when using Google Tag Manager.
+            // GTM will listen for this 'add_to_cart' event and fire the corresponding GA4 tag.
+            window.dataLayer.push({
+                event: 'add_to_cart', // This is the custom event name GTM will listen for
+                ecommerce: { // Use ecommerce object for structured GA4 e-commerce data
+                    items: [{
+                        item_name: productName,
+                        item_id: productId,
+                        price: productPrice,     // discounted price
+                        item_brand: brandName,
+                        quantity: 1
+                    }],
+                    currency: "INR" // Assuming Indian Rupees, adjust if needed
+                },
+                // You can also pass individual parameters outside the ecommerce object if desired,
+                // for simpler custom reporting if not fully leveraging e-commerce reports.
+                item_name_flat: productName,
+                item_id_flat: productId,
+                brand_flat: brandName,
+                price_flat: productPrice,
+                actual_price_flat: actualPrice,
+                quantity_flat: 1
+            });
+            console.log(`dataLayer.push for add_to_cart - Product: ${productName}, ID: ${productId}`);
 
             Toastify({
                 text: "Item added to cart",
