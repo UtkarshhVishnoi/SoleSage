@@ -7,16 +7,15 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-</head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-V3Z0GQQGD4"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-V3Z0GQQGD4');
-</script>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5KQFSVNP');</script>
+    </head>
 <body style="overflow-x: hidden; position: relative;">
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5KQFSVNP"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <header class="w-full sticky top-0 z-50 bg-[#f7f3e7]">
         <nav class="flex justify-between w-full px-4 md:px-8 py-2 items-center">
             <div class="flex items-center gap-2">
@@ -51,7 +50,7 @@
             <p style="color: #231709;">Our Exclusive Online Shopping Website</p>
             <h1 class="font-semibold text-6xl md:text-7xl" style="color: #231709;">SoleSage</h1>
             <p class="font-semibold" style="color: #231709;">Designed for those who walk with intention — SoleSage blends comfort, clarity, and timeless style in every step.</p>
-           <button style="background-color: #603F26; color: #f7f3e7;" class="p-3 md:p-5 rounded-full text-lg w-48">Shop now</button>
+           <button style="background-color: #603F26; color: #f7f3e7;" class="p-3 md:p-5 rounded-full text-lg w-48" onclick="scrollToProducts()">Shop now</button>
         </div>
         
     </main>
@@ -302,7 +301,7 @@
             </div>
             </div>
     </footer>
-    <div id="crt" class=" w-full md:w-[35%] h-screen hidden" style="padding-top: 40px;" >
+    <div id="crt" class=" w-full md:w-[35%] h-screen hidden" style="padding-top: 40;" >
         <div class="flex justify-between p-3 items-center">
            <h1 class="text-center font-semibold">Cart</h1>
            <p class="text-xl" id="crt-btn">x</p>
@@ -317,5 +316,13 @@
     </div>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="./script.js"></script>
+    <script>
+        function scrollToProducts() {
+            const productContainer = document.getElementById('product-container');
+            if (productContainer) {
+                productContainer.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
 </body>
 </html>
